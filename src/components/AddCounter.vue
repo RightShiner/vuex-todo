@@ -1,17 +1,21 @@
 // AddCounter.vue
 
-<template>
-  <div class="container">
-    <div class="field is-grouped">
-      <div class="control">
-        <button class="button is-primary">Add</button>
-      </div>
-    </div>
-  </div>
-</template>
+import Vue from 'vue';
+import Vuex from 'vuex';
+Vue.use(Vuex);
 
-<script>
-export default {
-
-}
-</script>
+const store = new Vuex.Store({
+  state: {
+    count: 0
+  },
+  mutations: {
+    increment (state, payload){
+      return state.count = state.count + payload.amount;
+    }
+  },
+  actions: {
+    increment (context, payload) {
+      context.commit('increment', payload)
+  }
+})
+export default store;

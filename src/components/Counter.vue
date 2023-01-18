@@ -11,10 +11,10 @@
 </template>
 <script>
 
+import { mapState } from 'vuex';
 
 export default {
-  data: {
-    count: 0
-  }
-}
+  computed: mapState({
+    count: state => state.count
+  })}
 </script>

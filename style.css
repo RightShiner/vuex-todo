@@ -1,0 +1,24 @@
+body {
+    background: url('http://www.desktop-background.com/download/o/2013/06/15/592513_download-plain-white-backgrounds-8193-2560x1600-px-high-resolution_2560x1600_h.jpg') center center;
+}
+p {
+    color: black;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 25px;
+}
+#main {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -150px;
+    border:5px dashed black;
+    background: wheat;
+}
+
+div {
+    text-align: center;
+}
+
+input {}

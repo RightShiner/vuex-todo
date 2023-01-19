@@ -1,8 +1,7 @@
-// webpack.config.js
-
+var path = require('path');
 module.exports = {
   // This is the "main" file which should include all other modules
-  entry: './src/main.js',
+  entry: path.join(__dirname,'/main.js'),
   // Where should the compiled file go?
   output: {
     filename: 'bundle.js'
@@ -34,5 +33,8 @@ module.exports = {
       }
     }
   ]
-}
+},
+devServer: {
+       port: 8080
+   }
 }

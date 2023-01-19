@@ -1,5 +1,3 @@
-// App.vue
-
 <template>
   <div class="container">
     <Counter></Counter><br />
@@ -11,18 +9,19 @@
         <RemoveCounter></RemoveCounter>
       </div>
     </div>
-  </div>
+ </div>
 </template>
 <script>
+
 import Counter from './components/Counter.vue';
 import AddCounter from './components/AddCounter.vue';
 import RemoveCounter from './components/RemoveCounter.vue';
 
-export default {
-  components: {
-    Counter,
-    AddCounter,
-    RemoveCounter
+  export default {
+    components : {
+      Counter,
+      AddCounter,
+      RemoveCounter
+    }
   }
-}
 </script>
